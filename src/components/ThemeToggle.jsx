@@ -1,3 +1,3 @@
 export const ThemeToggle = () => {
-  return <div>ThemeToggle</div>;
+  return <section>ThemeToggle</section>;
 };

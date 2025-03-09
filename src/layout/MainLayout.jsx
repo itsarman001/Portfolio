@@ -1,3 +1,13 @@
+import { Header, Footer, Hero, BaseContainer, BaseButton } from "../components";
+
 export const MainLayout = () => {
-  return <div>MainLayout</div>;
+  return (
+    <main>
+      <Header />
+      <Hero />
+      <BaseContainer />
+      <BaseButton flat />
+      <Footer />
+    </main>
+  );
 };

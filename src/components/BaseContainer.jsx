@@ -1,3 +1,3 @@
-export const BaseContainer = () => {
-  return <div>BaseContainer</div>;
+export const BaseContainer = ({ title, data }) => {
+  return <section>BaseContainer</section>;
 };
