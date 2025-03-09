@@ -1,3 +1,11 @@
+import { Logo, BaseButton, ListItem } from "./";
+const NAVIGATION = [""];
 export const Header = () => {
-  return <nav>Header</nav>;
+  return (
+    <nav>
+      <Logo />
+      <ListItem />
+      <BaseButton />
+    </nav>
+  );
 };
