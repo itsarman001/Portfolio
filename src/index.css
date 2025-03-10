@@ -1,126 +1,68 @@
-@import "tailwindcss";
-
-/* Importing Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-/* Custom Properties (CSS Variables) */
 :root {
-  --primary: hsla(180, 7%, 16%, 1);
-  --secondary: hsla(217, 7%, 78%, 1);
-  --text: hsla(227, 100%, 98%, 1);
-  --accent-light: hsla(351, 40%, 71%, 1);
-  --accent-dark: hsla(355, 54%, 44%, 1);
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Background colors */
-.bg-primary {
-  background-color: var(--primary);
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
 }
 
-.bg-secondary {
-  background-color: var(--secondary);
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-.bg-flat {
-  background-color: var(--text);
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
-.bg-accent-light {
-  background-color: var(--accent-light);
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
-.bg-accent-dark {
-  background-color: var(--accent-dark);
-}
-
-/* Text colors */
-.text-primary {
-  color: var(--primary);
-}
-
-.text-secondary {
-  color: var(--secondary);
-}
-
-.text-flat {
-  color: var(--text);
-}
-
-.text-accent-light {
-  color: var(--accent-light);
-}
-
-.text-accent-dark {
-  color: var(--accent-dark);
-}
-
-/* Borders */
-.border-primary {
-  border: 1px solid var(--primary);
-}
-
-.border-secondary {
-  border: 1px solid var(--secondary);
-}
-
-.border-flat {
-  border: 1px solid var(--text);
-}
-
-.border-accent-light {
-  border: 1px solid var(--accent-light);
-}
-
-.border-accent-dark {
-  border: 1px solid var(--accent-dark);
-}
-
-/* Hover effects */
-.hover-bg-primary:hover {
-  background-color: var(--primary);
-}
-
-.hover-bg-secondary:hover {
-  background-color: var(--secondary);
-}
-
-.hover-bg-flat:hover {
-  background-color: var(--text);
-}
-
-.hover-bg-accent-light:hover {
-  background-color: var(--accent-light);
-}
-
-.hover-bg-accent-dark:hover {
-  background-color: var(--accent-dark);
-}
-
-.hover-text-primary:hover {
-  color: var(--primary);
-}
-
-.hover-text-secondary:hover {
-  color: var(--secondary);
-}
-
-.hover-text-flat:hover {
-  color: var(--text);
-}
-
-.hover-text-accent-light:hover {
-  color: var(--accent-light);
-}
-
-.hover-text-accent-dark:hover {
-  color: var(--accent-dark);
-}
-
-/* Font Classes */
-.font-body {
-  font-family: "Roboto", sans-serif;
-}
-
-.font-heading {
-  font-family: "Playfair Display", serif !important;
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }

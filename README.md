@@ -1,39 +1,12 @@
-# Personal Portfolio
+# React + Vite
 
-A modern, responsive personal portfolio website built with React and styled using Tailwind CSS. The website showcases design and development projects with smooth animations and interactive elements.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- Responsive layout for all devices
-- Smooth animations with React libraries (e.g., `react-spring` or `Framer Motion`)
-- Tailwind CSS for clean and customizable styling
-- Interactive navigation and sections
+Currently, two official plugins are available:
 
-## Installation
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-To run the project locally, follow these steps:
+## Expanding the ESLint configuration
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd portfolio
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Run the app:
-   ```bash
-   npm run dev
-   ```
-
-## Technologies Used
-- React
-- Tailwind CSS
-- React Router (for navigation)
-- Framer Motion (for animations)
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
