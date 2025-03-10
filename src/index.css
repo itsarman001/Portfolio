@@ -1,13 +1,32 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Apply a light background and text color by default */
-body {
-  background-color: #f8fafc; /* light background */
-  color: #333; /* dark text */
+@theme {
+  --color-primary: #222831;
+  --color-secondary: #393e46;
+  --color-accent: #3c6e71ff;
+  --color-dark: #284b63ff;
+  --color-flat: #eeeeee;
 }
 
-/* Dark mode styles */
+body {
+  background-color: var(--color-flat);
+  color: var(--color-primary);
+}
+
 body.dark {
-  background-color: #1f2937; /* dark background */
-  color: #f8fafc; /* light text */
+  background-color: var(--color-primary);
+  color: var(--color-flat);
+}
+
+@layer utilities {
+  .font-garamond {
+    font-family: "EB Garamond", serif;
+  }
+  .font-playfair {
+    font-family: "Playfair Display", serif;
+  }
+  .font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
 }

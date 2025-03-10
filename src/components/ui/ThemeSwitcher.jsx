@@ -1,19 +1,17 @@
 import React from "react";
 import { useTheme } from "../../context/ThemeContext";
+import { MoonIcon, SunIcon } from "../../icons";
 
 const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div>
-      <p>Current Theme: {theme}</p>
-      <button
-        onClick={toggleTheme}
-        className="bg-blue-500 text-white p-2 rounded"
-      >
-        Switch Theme
-      </button>
-    </div>
+    <button
+      onClick={toggleTheme}
+      className="p-2 rounded-full hover:bg-secondary"
+    >
+      {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+    </button>
   );
 };
 
