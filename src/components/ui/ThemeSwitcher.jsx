@@ -8,9 +8,13 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full hover:bg-secondary"
+      className="p-2 rounded-full hover:bg-secondary group"
     >
-      {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+      {theme === "dark" ? (
+        <SunIcon />
+      ) : (
+        <MoonIcon className="group-hover:fill-flat" />
+      )}
     </button>
   );
 };

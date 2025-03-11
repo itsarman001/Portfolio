@@ -19,14 +19,12 @@ body.dark {
   color: var(--color-flat);
 }
 
-@layer utilities {
-  .font-garamond {
-    font-family: "EB Garamond", serif;
-  }
-  .font-playfair {
-    font-family: "Playfair Display", serif;
-  }
-  .font-roboto {
-    font-family: "Roboto", sans-serif;
-  }
+.font-special {
+  font-family: "EB Garamond", serif !important;
+}
+.font-heading {
+  font-family: "Playfair Display", serif !important;
+}
+.font-body {
+  font-family: "Roboto", sans-serif;
 }

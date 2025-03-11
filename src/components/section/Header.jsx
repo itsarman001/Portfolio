@@ -14,7 +14,7 @@ const Header = () => {
     },
   ];
   return (
-    <header className="flex items-center justify-between px-4 py-3">
+    <header className="flex items-center justify-between py-3">
       <BrandLogo children="arman" />
       <nav className="flex items-center gap-2">
         <ul className="flex items-center gap-2">

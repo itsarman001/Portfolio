@@ -1,4 +1,5 @@
 export const MoonIcon = ({
+  className = "",
   fill = "currentColor",
   height = 24,
   width = 24,
@@ -7,6 +8,7 @@ export const MoonIcon = ({
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
+      className={className}
       fill={fill}
       height={height}
       width={width}
