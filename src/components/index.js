@@ -1,17 +1,24 @@
-import BrandLogo from "./BrandLogo";
-import Footer from "./section/Footer";
-import Header from "./section/Header";
-import Hero from "./section/Hero";
-import BaseButton from "./ui/BaseButton";
-import BaseContainer from "./ui/BaseContainer";
-import ThemeSwitcher from "./ui/ThemeSwitcher";
+// Section Components
+import { Header } from "./section/Header";
+import { Hero } from "./section/Hero";
+import { About } from "./section/About";
+import { Footer } from "./section/Footer";
+
+// UI Components
+import { BaseLogo } from "./ui/BaseLogo";
+import { BaseHeading } from "./ui/BaseHeading";
+import { BaseButton } from "./ui/BaseButton";
+import { BaseContainer } from "./ui/BaseContainer";
+import { ThemeSwitcher } from "./ui/ThemeSwitcher";
 
 export {
-  Footer,
-  Header,
-  Hero,
-  BaseButton,
-  BaseContainer,
+  BaseLogo,
   ThemeSwitcher,
-  BrandLogo,
+  Header,
+  BaseHeading,
+  BaseButton,
+  Hero,
+  About,
+  BaseContainer,
+  Footer,
 };

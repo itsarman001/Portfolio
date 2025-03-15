@@ -1,6 +1,10 @@
-import React from "react";
-
-const BaseButton = ({ primary, secondary, flat, children, className = "" }) => {
+export const BaseButton = ({
+  primary,
+  secondary,
+  flat,
+  children,
+  className = "",
+}) => {
   const baseClasses =
     "px-5 py-3 font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50";
 
@@ -26,5 +30,3 @@ const BaseButton = ({ primary, secondary, flat, children, className = "" }) => {
     <button className={`${buttonClasses} ${className}`}>{children}</button>
   );
 };
-
-export default BaseButton;

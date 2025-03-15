@@ -1,14 +1,13 @@
-import React from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { MoonIcon, SunIcon } from "../../icons";
 
-const ThemeSwitcher = () => {
+export const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full hover:bg-secondary group"
+      className="p-1 rounded-full hover:bg-secondary group"
     >
       {theme === "dark" ? (
         <SunIcon />
@@ -18,5 +17,3 @@ const ThemeSwitcher = () => {
     </button>
   );
 };
-
-export default ThemeSwitcher;

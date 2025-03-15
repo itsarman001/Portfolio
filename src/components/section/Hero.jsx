@@ -1,6 +1,6 @@
 import { BaseButton } from "../index";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <section>
       <p className="text-md pb-0.5 font-heading">Hi there 👋, I'm</p>
@@ -11,11 +11,9 @@ const Hero = () => {
         approach, delivering high-quality results that transform experiences.
         Driven by a relentless pursuit of innovation,
       </p>
-      <section>
+      {/* <section>
         <BaseButton secondary>Resume</BaseButton>
-      </section>
+      </section> */}
     </section>
   );
 };
-
-export default Hero;
