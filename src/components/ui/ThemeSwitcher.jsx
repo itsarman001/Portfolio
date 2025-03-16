@@ -1,8 +1,7 @@
-import React from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { MoonIcon, SunIcon } from "../../icons";
 
-const ThemeSwitcher = () => {
+export const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -18,5 +17,3 @@ const ThemeSwitcher = () => {
     </button>
   );
 };
-
-export default ThemeSwitcher;
