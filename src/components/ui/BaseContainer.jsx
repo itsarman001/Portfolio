@@ -1,60 +1,80 @@
 import { ArrowIcon } from "../../icons";
 import { BaseHeading, BaseChip } from "../index";
 
-export const BaseContainer = ({ header, data, id }) => {
+export const BaseContainer = ({ header, data, id, type }) => {
   return (
     <section aria-labelledby={id} id={id}>
       <BaseHeading label={header} dot />
+      {data.map((item) => {
+        const isExperience = type === "experience";
+        const title = isExperience ? item.position : item.name;
+        const linkUrl = isExperience ? item.company.url : item.url;
+        const linkText = isExperience ? item.company.name : "Live Preview";
+        const description = isExperience
+          ? item.responsibilities
+          : item.description;
 
-      {data.map((exp) => (
-        <article
-          key={exp.id}
-          className="border-l-2 pl-4 mt-2 mb-5 w-full"
-          aria-labelledby={`experience-${exp.id}`}
-        >
-          <div className="flex justify-between items-start flex-wrap">
-            <div>
-              <div className="flex items-center gap-2.5 mb-0.5">
-                <h3 className="text-xl font-bold">{exp.position}</h3>
-                <BaseChip>{exp.location}</BaseChip>
-              </div>
+        return (
+          <article
+            key={item.id}
+            className="border-l-2 pl-4 mt-2 mb-5 w-full"
+            aria-labelledby={`${type}-${item.id}`}
+          >
+            <header className="flex justify-between items-start flex-wrap">
+              <div>
+                <h3 className="text-xl font-bold">
+                  {title} {isExperience && <BaseChip>{item.location}</BaseChip>}
+                </h3>
 
-              <p>
-                at,{" "}
-                <span className="hover:underline">
+                <p>
+                  {type === "experience" ? "at " : ""}
                   <a
-                    href={exp.company.url}
+                    href={linkUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Visit ${exp.company.name} website`}
+                    className="hover:underline"
                   >
-                    {exp.company.name}
-                    <ArrowIcon className="w-5 h-5 inline-block" />
+                    {linkText} <ArrowIcon className="w-5 h-5 inline-block" />
                   </a>
-                </span>
-              </p>
-            </div>
-            <p className="text-sm mt-1">
-              {exp.duration.start} - {exp.duration.end}
-            </p>
-          </div>
+                </p>
+              </div>
+              {isExperience && (
+                <time className="text-sm mt-1">
+                  {item.duration.start} - {item.duration.end}
+                </time>
+              )}
+            </header>
 
-          <ul className="list-disc list-inside mt-4 space-y-2">
-            {exp.responsibilities.map((task, index) => (
-              <li key={index} className="list-none flex items-center gap-4">
-                <span className="w-2 h-2 rounded-full inline-block bg-flat"></span>
-                <p className="text-sm">{task}</p>
-              </li>
-            ))}
-          </ul>
+            <ul className="list-disc list-inside mt-4 space-y-2">
+              {description.map((desc, index) => (
+                <li key={index} className="list-none flex items-center gap-4">
+                  <span className="w-2 h-2 rounded-full inline-block bg-flat"></span>
+                  <p className="text-sm">{desc}</p>
+                </li>
+              ))}
+            </ul>
 
-          <div className="flex flex-wrap gap-2 mt-4 pl-5">
-            {exp.technologies.map((tech, index) => (
-              <BaseChip key={index}>{tech}</BaseChip>
-            ))}
-          </div>
-        </article>
-      ))}
+            <footer className="flex flex-wrap gap-2 mt-4 pl-5">
+              {item.technologies.map((tech, index) => (
+                <BaseChip key={index}>{tech}</BaseChip>
+              ))}
+            </footer>
+          </article>
+        );
+      })}
+
+      {type !== "experience" && (
+        <BaseChip className="mx-auto">
+          <a
+            href="https://github.com/itsarman001"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            View More
+          </a>
+        </BaseChip>
+      )}
     </section>
   );
 };

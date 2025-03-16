@@ -9,6 +9,7 @@ import { BaseLogo } from "./ui/BaseLogo";
 import { BaseHeading } from "./ui/BaseHeading";
 import { BaseButton } from "./ui/BaseButton";
 import { BaseContainer } from "./ui/BaseContainer";
+import { MySkills } from "./section/MySkills";
 import { ThemeSwitcher } from "./ui/ThemeSwitcher";
 import { BaseChip } from "./ui/BaseChip";
 
@@ -22,5 +23,6 @@ export {
   About,
   BaseChip,
   BaseContainer,
+  MySkills,
   Footer,
 };

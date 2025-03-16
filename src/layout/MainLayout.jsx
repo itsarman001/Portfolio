@@ -1,7 +1,14 @@
 import React from "react";
-import { Header, Footer, Hero, About, BaseContainer } from "../components";
+import {
+  Header,
+  Footer,
+  Hero,
+  About,
+  BaseContainer,
+  MySkills,
+} from "../components";
 import { useTheme } from "../context/ThemeContext";
-import { aboutMe, workExperience, projects } from "../constensts";
+import { aboutMe, workExperience, projects, skills } from "../constensts";
 
 const MainLayout = () => {
   const { theme } = useTheme();
@@ -9,7 +16,7 @@ const MainLayout = () => {
     <div
       className={`min-h-screen ${
         theme === "dark" ? "dark" : ""
-      } bg-background text-foreground mx-auto px-4 w-full lg:w-2/3 xl:w-1/2 pt-6 sm:pt-12 font-body`}
+      }  mx-auto px-4 w-full lg:w-2/3 xl:w-1/2 pt-6 sm:pt-12 font-body`}
     >
       <Header />
       <main>
@@ -22,15 +29,19 @@ const MainLayout = () => {
         <BaseContainer
           header={workExperience.header}
           id={workExperience.id}
-          className="my-4"
+          className="mt-10"
           data={workExperience.experience}
+          type="experience"
         />
-        {/* <BaseContainer
+        <div className="my-10"></div>
+        <BaseContainer
           header={projects.header}
           id={projects.id}
-          className="my-4"
+          className="mb-10"
           data={projects.projects}
-        /> */}
+          type="projects"
+        />
+        <MySkills data={skills} className="my-10" />
       </main>
       <Footer />
     </div>
