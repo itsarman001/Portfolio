@@ -7,7 +7,7 @@ export const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-1 rounded-full hover:bg-secondary group"
+      className="p-2 rounded-full hover:bg-secondary group"
     >
       {theme === "dark" ? (
         <SunIcon />

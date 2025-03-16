@@ -1,5 +1,5 @@
 export const aboutMe = {
-  header: "About Me.",
+  header: "About Me",
   aboutMe: `Hey! I'm a full-stack developer who loves building efficient, 
             scalable, and intuitive applications. I thrive on solving complex 
             problems, optimizing performance, and creating seamless user 

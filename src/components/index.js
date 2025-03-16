@@ -10,6 +10,7 @@ import { BaseHeading } from "./ui/BaseHeading";
 import { BaseButton } from "./ui/BaseButton";
 import { BaseContainer } from "./ui/BaseContainer";
 import { ThemeSwitcher } from "./ui/ThemeSwitcher";
+import { BaseChip } from "./ui/BaseChip";
 
 export {
   BaseLogo,
@@ -19,6 +20,7 @@ export {
   BaseButton,
   Hero,
   About,
+  BaseChip,
   BaseContainer,
   Footer,
 };

@@ -1,51 +1,56 @@
-import { BaseHeading } from "../index";
+import { ArrowIcon } from "../../icons";
+import { BaseHeading, BaseChip } from "../index";
 
-export const BaseContainer = ({ header, data }) => {
+export const BaseContainer = ({ header, data, id }) => {
   return (
-    <section className=" max-w-3xl mx-auto" aria-labelledby="experience-header">
-      <BaseHeading label={header} id="experience-header" />
+    <section aria-labelledby={id} id={id}>
+      <BaseHeading label={header} dot />
 
       {data.map((exp) => (
         <article
           key={exp.id}
-          className="border-l-4 border-secondary pl-4 my-4"
+          className="border-l-2 pl-4 mt-2 mb-5 w-full"
           aria-labelledby={`experience-${exp.id}`}
         >
-          <div className="flex justify-between items-center mb-2">
-            <h3 className="text-xl font-bold">{exp.position}</h3>
-            <span className="bg-secondary text-sm px-2 py-1 rounded-md">
-              {exp.location}
-            </span>
+          <div className="flex justify-between items-start flex-wrap">
+            <div>
+              <div className="flex items-center gap-2.5 mb-0.5">
+                <h3 className="text-xl font-bold">{exp.position}</h3>
+                <BaseChip>{exp.location}</BaseChip>
+              </div>
+
+              <p>
+                at,{" "}
+                <span className="hover:underline">
+                  <a
+                    href={exp.company.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit ${exp.company.name} website`}
+                  >
+                    {exp.company.name}
+                    <ArrowIcon className="w-5 h-5 inline-block" />
+                  </a>
+                </span>
+              </p>
+            </div>
+            <p className="text-sm mt-1">
+              {exp.duration.start} - {exp.duration.end}
+            </p>
           </div>
 
-          <a
-            href={exp.company.url}
-            className="text-accent hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Visit ${exp.company.name} website`}
-          >
-            {exp.company.name}
-          </a>
-
-          <p className="text-flat text-sm mt-1">
-            {exp.duration.start} - {exp.duration.end}
-          </p>
-
-          <ul className="list-disc list-inside mt-4 space-y-2 text-gray-400">
+          <ul className="list-disc list-inside mt-4 space-y-2">
             {exp.responsibilities.map((task, index) => (
-              <li key={index}>{task}</li>
+              <li key={index} className="list-none flex items-center gap-4">
+                <span className="w-2 h-2 rounded-full inline-block bg-flat"></span>
+                <p className="text-sm">{task}</p>
+              </li>
             ))}
           </ul>
 
-          <div className="flex flex-wrap gap-2 mt-4">
+          <div className="flex flex-wrap gap-2 mt-4 pl-5">
             {exp.technologies.map((tech, index) => (
-              <span
-                key={index}
-                className="bg-secondary text-flat text-xs px-3 py-1 rounded-md"
-              >
-                {tech}
-              </span>
+              <BaseChip key={index}>{tech}</BaseChip>
             ))}
           </div>
         </article>

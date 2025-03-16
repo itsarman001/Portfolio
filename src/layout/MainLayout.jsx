@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, Footer, Hero, About, BaseContainer } from "../components";
 import { useTheme } from "../context/ThemeContext";
-import { aboutMe, workExperience } from "../constensts";
+import { aboutMe, workExperience, projects } from "../constensts";
 
 const MainLayout = () => {
   const { theme } = useTheme();
@@ -21,9 +21,16 @@ const MainLayout = () => {
         />
         <BaseContainer
           header={workExperience.header}
+          id={workExperience.id}
           className="my-4"
           data={workExperience.experience}
         />
+        {/* <BaseContainer
+          header={projects.header}
+          id={projects.id}
+          className="my-4"
+          data={projects.projects}
+        /> */}
       </main>
       <Footer />
     </div>

@@ -1,3 +1,5 @@
 import { aboutMe } from "./aboutMe";
 import { workExperience } from "./workExperience";
-export { aboutMe, workExperience };
+import { projects } from "./myProjects";
+
+export { aboutMe, workExperience, projects };
