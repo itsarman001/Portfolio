@@ -33,7 +33,7 @@ const MainLayout = () => {
           data={workExperience.experience}
           type="experience"
         />
-        <div className="my-10"></div>
+        <span className="my-10"></span>
         <BaseContainer
           header={projects.header}
           id={projects.id}
