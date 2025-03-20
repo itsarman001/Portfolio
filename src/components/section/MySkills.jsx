@@ -3,7 +3,6 @@ import { BaseHeading } from "../index";
 export const MySkills = ({ data, className = "" }) => {
   return (
     <section className={`${className}`}>
-      <BaseHeading label="Technical Skills" dot />
       <div className="border-l-2 mt-4 space-y-4">
         {Object.entries(data).map(([category, skillList]) => (
           <article
