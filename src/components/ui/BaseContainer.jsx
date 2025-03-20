@@ -1,10 +1,9 @@
 import { ArrowIcon } from "../../icons";
-import { BaseHeading, BaseChip } from "../index";
+import { BaseChip } from "../index";
 
-export const BaseContainer = ({ header, data, id, type }) => {
+export const BaseContainer = ({ data, id, type }) => {
   return (
-    <section aria-labelledby={id} id={id}>
-      <BaseHeading label={header} dot />
+    <section aria-labelledby={id}>
       {data.map((item) => {
         const isExperience = type === "experience";
         const title = isExperience ? item.position : item.name;
@@ -17,7 +16,7 @@ export const BaseContainer = ({ header, data, id, type }) => {
         return (
           <article
             key={item.id}
-            className="border-l-2 pl-4 mt-2 mb-5 w-full"
+            className="border-l-2 pl-4 mt-2 mb-8 w-full"
             aria-labelledby={`${type}-${item.id}`}
           >
             <header className="flex justify-between items-start flex-wrap">
@@ -63,17 +62,19 @@ export const BaseContainer = ({ header, data, id, type }) => {
         );
       })}
 
-      {type !== "experience" && (
-        <BaseChip className="mx-auto">
-          <a
-            href="https://github.com/itsarman001"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            View More
-          </a>
-        </BaseChip>
+      {type !== "projects" && (
+        <div className="flex items-center justify-center w-full">
+          <BaseChip>
+            <a
+              href="https://github.com/itsarman001"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              View More
+            </a>
+          </BaseChip>
+        </div>
       )}
     </section>
   );

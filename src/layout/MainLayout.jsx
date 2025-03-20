@@ -4,6 +4,7 @@ import {
   Footer,
   Hero,
   About,
+  BaseHeading,
   BaseContainer,
   MySkills,
 } from "../components";
@@ -26,22 +27,37 @@ const MainLayout = () => {
           header={aboutMe.header}
           aboutMe={aboutMe.aboutMe}
         />
+        <BaseHeading
+          label={workExperience.header}
+          id={workExperience.id}
+          dot
+          className="mt-5"
+        />
         <BaseContainer
-          header={workExperience.header}
           id={workExperience.id}
           className="mt-10"
           data={workExperience.experience}
           type="experience"
         />
-        <span className="my-10"></span>
+        <BaseHeading
+          label={projects.header}
+          id={projects.id}
+          dot
+          className="mt-5"
+        />
         <BaseContainer
           header={projects.header}
-          id={projects.id}
           className="mb-10"
           data={projects.projects}
           type="projects"
         />
-        <MySkills data={skills} className="my-10" />
+        <BaseHeading
+          label="Technical Skills"
+          id="my-skills"
+          dot
+          className="mt-5"
+        />
+        <MySkills data={skills} className="mb-5" />
       </main>
       <Footer />
     </div>
