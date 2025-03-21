@@ -5,13 +5,14 @@ import { About } from "./section/About";
 import { Footer } from "./section/Footer";
 
 // UI Components
-import { BaseLogo } from "./ui/BaseLogo";
-import { BaseHeading } from "./ui/BaseHeading";
-import { BaseButton } from "./ui/BaseButton";
-import { BaseContainer } from "./ui/BaseContainer";
+import { BaseLogo } from "./base/BaseLogo";
+import { BaseHeading } from "./base/BaseHeading";
+import { BaseButton } from "./base/BaseButton";
+import { BaseContainer } from "./base/BaseContainer";
 import { MySkills } from "./section/MySkills";
-import { ThemeSwitcher } from "./ui/ThemeSwitcher";
-import { BaseChip } from "./ui/BaseChip";
+import { BaseChip } from "./base/BaseChip";
+
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export {
   BaseLogo,

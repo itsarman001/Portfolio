@@ -8,6 +8,7 @@ import {
   BaseContainer,
   MySkills,
 } from "../components";
+import { Button } from "@/components/ui/button";
 import { useTheme } from "../context/ThemeContext";
 import { aboutMe, workExperience, projects, skills } from "../constensts";
 
@@ -22,6 +23,7 @@ const MainLayout = () => {
       <Header />
       <main>
         <Hero />
+        <Button>Click me</Button>
         <About
           className="my-4"
           header={aboutMe.header}

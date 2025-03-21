@@ -1,5 +1,5 @@
-import { useTheme } from "../../context/ThemeContext";
-import { MoonIcon, SunIcon } from "../../icons";
+import { useTheme } from "../context/ThemeContext";
+import { MoonIcon, SunIcon } from "../icons";
 
 export const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
