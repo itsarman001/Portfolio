@@ -1,31 +1,7 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
-@theme {
-  --color-background: #121212;
-  --color-foreground: #f8f8ff;
-  --color-accent: #888888;
-  --color-border-divider: #444444;
-  --color-primary-text: #e0e0e0;
-  --color-secondary-text: #b0b0b0;
-
-  --font-unique: "Bebas Neue", sans-serif;
-  --font-heading: "Inter", sans-serif;
-  --font-body: "Roboto", sans-serif;
-}
-
-body {
-  background-color: var(--color-foreground);
-  color: var(--color-background);
-}
-
-body.dark {
-  background-color: var(--color-background);
-  color: var(--color-primary-text);
-}
 
 :root {
   --radius: 0.625rem;
