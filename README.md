@@ -1,7 +1,3 @@
-Here's a refined version of your `README.md`, tailored for your current setup with Vite, React, Tailwind CSS, and future Framer Motion integration.
-
----
-
 # 🚀 My Portfolio
 
 Welcome to my personal portfolio repository! This project showcases my work, skills, and experience through a modern, responsive, and dynamic web application.
