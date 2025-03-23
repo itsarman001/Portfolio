@@ -1,3 +1,3 @@
-export const Logo = ({ label }) => {
-  return <h1>{label}</h1>;
+export const Logo = () => {
+  return <h1 className="tracking-tighter font-bold text-xl">Arman</h1>;
 };

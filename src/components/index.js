@@ -1,2 +1,5 @@
+import { BaseHeading } from "./BaseHeading";
 import { Logo } from "./Logo";
-export { Logo };
+import { ModeToggle } from "./mode-toggle";
+
+export { Logo, ModeToggle, BaseHeading };
