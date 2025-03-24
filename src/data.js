@@ -1,36 +1,115 @@
 export const aboutMe = {
-  name: "Your Name",
-  role: "Web Developer | React & Tailwind Enthusiast",
+  name: "Md Arman",
+  role: "Web Developer",
   description: [
     "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
     "I work with React, Next.js, and Tailwind CSS v4 to create seamless user experiences. I love experimenting with Framer Motion for animations and leveraging ShadCN UI for clean, accessible design components.",
   ],
-  avatar: "/images/avatar.png",
-  resume: "/resume.pdf",
+  avatar: "String",
+  resume: "String",
   socialLinks: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername",
+    github: "String",
+    linkedin: "String",
+    twitter: "String",
   },
 };
 
-export const experience = [
+export const experiences = [
   {
-    id: 1,
-    company: "Company Name",
-    role: "Frontend Developer",
-    duration: "Jan 2022 - Present",
-    description:
-      "Worked on building interactive UI components using React and Tailwind CSS.",
+    role: "String",
+    type: "String",
+    company: "String",
+    links: ["String"],
+    duration: "Date String",
+    responsibilities: ["", "", "", ""],
+    technologies: [
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "ShadCN",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "Contentful",
+      "AWS",
+      "GCP",
+      "Vercel",
+      "Nginx",
+      "Git & Github",
+    ],
   },
 ];
 
 export const projects = [
   {
-    id: 1,
-    title: "Project One",
-    description: "A cool project built with React and Tailwind CSS.",
-    link: "https://github.com/yourusername/project-one",
-    image: "/images/project-one.png",
+    name: "String",
+    links: [
+      {
+        label: "Live Preview",
+        link: "",
+      },
+      {
+        label: "Github",
+        link: "",
+      },
+    ],
+    description: ["String", "String"],
+    techStack: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Razorpay",
+      "Firebase",
+      "GCP",
+    ],
+  },
+];
+
+export const skillsData = [
+  {
+    category: "Languages",
+    skills: ["JavaScript", "TypeScript", "HTML", "CSS", "Node.js"],
+  },
+  {
+    category: "Frameworks",
+    skills: [
+      "React.js",
+      "Next.js",
+      "Astro",
+      "Express.js",
+      "React Native",
+      "Expo",
+      "Electron",
+    ],
+  },
+  {
+    category: "Libraries",
+    skills: [
+      "TanStack Query",
+      "Zod",
+      "Tailwind CSS",
+      "ShadCN",
+      "Material UI",
+      "Ant Design",
+    ],
+  },
+  {
+    category: "Database & Backend",
+    skills: ["MongoDB", "Firebase", "Redis", "Contentful", "GraphQL"],
+  },
+  {
+    category: "Cloud & Deployment",
+    skills: [
+      "Google Cloud Platform (GCP)",
+      "Amazon Web Services (AWS)",
+      "Vercel",
+    ],
+  },
+  {
+    category: "Tools & Platforms",
+    skills: ["Git", "GitHub", "Razorpay", "Postman", "Visual Studio Code"],
   },
 ];
