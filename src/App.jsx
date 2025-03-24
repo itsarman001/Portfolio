@@ -1,8 +1,10 @@
+import { Layout } from "./layouts/Layout";
+import { ThemeProvider } from "@/components/theme-provider";
 function App() {
   return (
-    <>
-      <h1 className="text-4xl underline font-bold">Hello World</h1>
-    </>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <Layout />;
+    </ThemeProvider>
   );
 }
 
