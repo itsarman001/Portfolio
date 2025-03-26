@@ -1,42 +1,45 @@
 export const aboutMe = {
   name: "Md Arman",
   role: "Web Developer",
-  description: [
-    "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
-    "I work with React, Next.js, and Tailwind CSS v4 to create seamless user experiences. I love experimenting with Framer Motion for animations and leveraging ShadCN UI for clean, accessible design components.",
-  ],
-  avatar: "String",
+  about: {
+    intro:
+      "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
+    expertise:
+      "I work with React, Next.js, and Tailwind CSS to create seamless user experiences. I love experimenting with Framer Motion for animations and leveraging ShadCN UI for clean, accessible design components.",
+  },
   resume: "String",
   socialLinks: {
-    github: "String",
-    linkedin: "String",
+    email: "String",
+    github: "https://github.com/itsarman001",
+    linkedin: "https://www.linkedin.com/in/md-arman-15747b274/",
     twitter: "String",
   },
 };
 
 export const experiences = [
   {
-    role: "String",
-    type: "String",
-    company: "String",
-    links: ["String"],
-    duration: "Date String",
-    responsibilities: ["", "", "", ""],
+    role: "Jr Frontend Developer",
+    type: "Kolkata - WB",
+    company: "Wiseboxs Technologies",
+    links: ["https://wiseboxs.com/"],
+    duration: "Jan, 2025 - Present",
+    responsibilities: [
+      "Developed and maintained scalable web applications to enhance user engagement and operational efficiency.",
+      "Participated in code reviews and contributed to the optimization of existing codebases.",
+      "Collaborated with cross-functional teams to design and implement scalable solutions.",
+      "Utilized modern frameworks and libraries to ensure responsive and dynamic user interfaces.",
+    ],
     technologies: [
-      "TypeScript",
-      "React.js",
-      "Next.js",
+      "Typescript",
+      "Vue.js",
+      "Qusar",
+      "Vuetify",
+      "Docker",
       "Tailwind CSS",
-      "ShadCN",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
+      "SCSS & SASS",
+      "MySql",
+      "Supabase",
       "Firebase",
-      "Contentful",
-      "AWS",
-      "GCP",
-      "Vercel",
-      "Nginx",
       "Git & Github",
     ],
   },
@@ -56,52 +59,34 @@ export const projects = [
       },
     ],
     description: ["String", "String"],
-    techStack: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Razorpay",
-      "Firebase",
-      "GCP",
-    ],
+    techStack: ["String", "String"],
   },
 ];
 
 export const skillsData = [
   {
     category: "Languages",
+    show: true,
     skills: ["JavaScript", "TypeScript", "HTML", "CSS", "Node.js"],
   },
   {
     category: "Frameworks",
-    skills: [
-      "React.js",
-      "Next.js",
-      "Astro",
-      "Express.js",
-      "React Native",
-      "Expo",
-      "Electron",
-    ],
+    show: true,
+    skills: ["React.js", "Next.js", "Vue.js"],
   },
   {
     category: "Libraries",
-    skills: [
-      "TanStack Query",
-      "Zod",
-      "Tailwind CSS",
-      "ShadCN",
-      "Material UI",
-      "Ant Design",
-    ],
+    show: true,
+    skills: ["Tailwind CSS", "ShadCN", "Quasar", "Vuetify", "Material UI"],
   },
   {
     category: "Database & Backend",
+    show: false,
     skills: ["MongoDB", "Firebase", "Redis", "Contentful", "GraphQL"],
   },
   {
     category: "Cloud & Deployment",
+    show: false,
     skills: [
       "Google Cloud Platform (GCP)",
       "Amazon Web Services (AWS)",
@@ -110,6 +95,7 @@ export const skillsData = [
   },
   {
     category: "Tools & Platforms",
-    skills: ["Git", "GitHub", "Razorpay", "Postman", "Visual Studio Code"],
+    show: true,
+    skills: ["Git", "GitHub", "Visual Studio Code"],
   },
 ];
