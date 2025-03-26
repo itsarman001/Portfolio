@@ -1,14 +1,17 @@
 export const aboutMe = {
   name: "Md Arman",
   role: "Web Developer",
-  description: [
-    "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
-    "I work with React, Next.js, and Tailwind CSS v4 to create seamless user experiences. I love experimenting with Framer Motion for animations and leveraging ShadCN UI for clean, accessible design components.",
-  ],
+  about: {
+    intro:
+      "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
+    expertise:
+      "I work with React, Next.js, and Tailwind CSS to create seamless user experiences. I love experimenting with Framer Motion for animations and leveraging ShadCN UI for clean, accessible design components.",
+  },
   resume: "String",
   socialLinks: {
+    email: "String",
     github: "https://github.com/itsarman001",
-    linkedin: "String",
+    linkedin: "https://www.linkedin.com/in/md-arman-15747b274/",
     twitter: "String",
   },
 };
@@ -31,9 +34,12 @@ export const experiences = [
       "Vue.js",
       "Qusar",
       "Vuetify",
+      "Docker",
       "Tailwind CSS",
       "SCSS & SASS",
+      "MySql",
       "Supabase",
+      "Firebase",
       "Git & Github",
     ],
   },
