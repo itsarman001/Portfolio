@@ -1,3 +1,10 @@
-export const Logo = () => {
-  return <h1 className="tracking-tighter font-bold text-xl">Arman</h1>;
+export const Logo = ({ onClick }) => {
+  return (
+    <h1
+      onClick={onClick}
+      className="tracking-tighter font-bold text-xl cursor-pointer"
+    >
+      Arman
+    </h1>
+  );
 };

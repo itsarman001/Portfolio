@@ -1,10 +1,10 @@
 import React from "react";
 import { BaseHeading } from "../components";
 
-export const Skills = ({ data }) => {
+export const Skills = ({ data, header, id }) => {
   return (
-    <div id="skills" className="py-10">
-      <BaseHeading>Technical Skills</BaseHeading>
+    <div id={id} className="py-10">
+      <BaseHeading>{header}</BaseHeading>
       <ul className="mt-4 flex flex-col gap-2 text-base font-normal text-primary/90">
         {data.map(
           (skill, index) =>
