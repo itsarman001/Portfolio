@@ -1,4 +1,4 @@
-import { BaseHeading } from "../components";
+import { BaseHeading } from "@/components";
 import { aboutMe } from "@/data";
 export const AboutMe = () => (
   <section id="about-me" className="py-10">

@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseHeading } from "../components";
+import { BaseHeading } from "@/components";
 
 export const Skills = ({ data, header, id }) => {
   return (

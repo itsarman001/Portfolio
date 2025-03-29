@@ -1,5 +1,5 @@
 import { useNavigateTo, useScrollToTop } from "@/hooks";
-import { Logo, ModeToggle } from "../components";
+import { Logo, ModeToggle } from "@/components";
 
 export const Header = () => {
   const LINKS = [

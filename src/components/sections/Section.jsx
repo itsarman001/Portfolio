@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 
-import { BaseHeading } from "../components";
+import { BaseHeading } from "@/components";
 
 export const Section = ({ data, header, id, github, type }) => {
   return (

@@ -1,4 +1,4 @@
-import { Header, Hero, AboutMe, Section, Skills, Footer } from "../sections";
+import { Header, Hero, AboutMe, Section, Skills, Footer } from "@/components";
 import { aboutMe, experiences, projects, skillsData } from "@/data";
 export const Layout = () => {
   return (
