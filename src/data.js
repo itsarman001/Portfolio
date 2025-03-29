@@ -3,7 +3,7 @@ export const aboutMe = {
   role: "Web Developer",
   about: {
     intro:
-      "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
+      "Hey! I'm a Frontend developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
     expertise:
       "I work with React, Next.js, and Tailwind CSS to create seamless user experiences. I love experimenting with Framer Motion for animations and leveraging ShadCN UI for clean, accessible design components.",
   },
@@ -18,10 +18,9 @@ export const aboutMe = {
 
 export const experiences = [
   {
-    role: "Jr Frontend Developer",
+    role: "Frontend Developer",
     type: "Kolkata - WB",
-    company: "Wiseboxs Technologies",
-    links: ["https://wiseboxs.com/"],
+    company: { label: "Wiseboxs Technologies", link: "https://wiseboxs.com/" },
     duration: "Jan, 2025 - Present",
     responsibilities: [
       "Developed and maintained scalable web applications to enhance user engagement and operational efficiency.",
@@ -47,19 +46,35 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "String",
+    name: "Quick Links",
     links: [
       {
         label: "Live Preview",
-        link: "",
+        link: "https://qwklink.vercel.app/",
       },
       {
-        label: "Github",
-        link: "",
+        label: "Source Code",
+        link: "https://github.com/itsarman001/Quick-Link",
       },
     ],
-    description: ["String", "String"],
-    techStack: ["String", "String"],
+    description: [
+      "URL Shortening: Convert long URLs into short, shareable links.",
+      "Custom Aliases: Create personalized short URLs.",
+      "Supabase Integration: Robust backend powered by Supabase for data management and authentication.",
+      "Responsive Design: Optimized for both desktop and mobile devices.",
+      "User-Friendly Interface: Intuitive UI for an enhanced user experience.",
+    ],
+    techStack: [
+      "React",
+      "Supabase",
+      "Shadcn UI",
+      "React Router DOM",
+      "Yup",
+      "Tailwind CSS",
+      "Vite",
+      "React Spinners",
+      "React QR Code Logo",
+    ],
   },
 ];
 

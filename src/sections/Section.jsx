@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+
 import { BaseHeading } from "../components";
 
 export const Section = ({ data, header, id, github, type }) => {
@@ -7,7 +8,9 @@ export const Section = ({ data, header, id, github, type }) => {
       <BaseHeading>{header}</BaseHeading>
       <ul
         className={`mt-4 ${
-          type === "projects" ? "grid md:grid-cols-2" : "flex flex-col"
+          type === "projects" && data.length > 3
+            ? "grid md:grid-cols-2"
+            : "flex flex-col"
         } gap-12 text-base font-normal text-primary/90`}
       >
         {data.map((item, index) => (
@@ -19,12 +22,14 @@ export const Section = ({ data, header, id, github, type }) => {
               <div>
                 <p className="text-lg text-primary/90">
                   {type === "projects" ? item.name : item.role}
+
                   {type === "experiences" && (
                     <span className="ml-2 rounded bg-secondary px-2 py-1 text-xs inline-block max-sm:mb-2">
                       {item.type}
                     </span>
                   )}
                 </p>
+
                 {type === "experiences" && (
                   <p className="flex items-center text-sm">
                     at,
@@ -32,12 +37,13 @@ export const Section = ({ data, header, id, github, type }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="ml-1 flex items-center gap-1"
-                      href={item.links[0]}
+                      href={item.company.links}
                     >
-                      {item.company} <ArrowUpRight size={18} />
+                      {item.company.label} <ArrowUpRight size={18} />
                     </a>
                   </p>
                 )}
+
                 {type === "projects" && (
                   <p className="flex items-center gap-1 text-sm">
                     {item.links.map((link, i) => (
@@ -54,10 +60,12 @@ export const Section = ({ data, header, id, github, type }) => {
                   </p>
                 )}
               </div>
+
               {type === "experiences" && (
                 <p className="text-sm text-muted-foreground">{item.duration}</p>
               )}
             </div>
+
             <ul className="mt-4 list-disc space-y-1 pl-3 text-sm text-muted-foreground text-justify">
               {item.description?.map((desc, i) => (
                 <li key={i}>{desc}</li>
@@ -66,6 +74,7 @@ export const Section = ({ data, header, id, github, type }) => {
                 <li key={i}>{task}</li>
               ))}
             </ul>
+
             <ul className="mt-2 flex flex-wrap items-center gap-2 pl-3">
               {item.techStack?.map((tech, i) => (
                 <li key={i} className="rounded bg-muted px-2 py-1 text-xs">

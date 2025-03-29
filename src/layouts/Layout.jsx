@@ -13,13 +13,13 @@ export const Layout = () => {
           header="experience."
           id="experience-section"
         />
-        {/* <Section
+        <Section
           data={projects}
           type="projects"
           header="projects."
           id="projects-section"
           github={aboutMe?.socialLinks?.github}
-        /> */}
+        />
         <Skills
           data={skillsData}
           header="technical skills."
