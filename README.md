@@ -1,80 +1,75 @@
-# 🚀 My Portfolio
+# Nuxt Minimal Starter
 
-Welcome to my personal portfolio repository! This project showcases my work, skills, and experience through a modern, responsive, and dynamic web application.
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## 🔗 Live Preview
+## Setup
 
-[View Portfolio](https://your-portfolio-link.com) _(Replace with your actual link)_
+Make sure to install dependencies:
 
-## 🛠 Tech Stack
+```bash
+# npm
+npm install
 
-- **Framework**: React (Vite)
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **UI Components**: Shadcn Ui, Lucide React
-- **Linting**: ESLint
-- **Development Tools**: Vite, Yarn
+# pnpm
+pnpm install
 
-## 📁 Folder Structure
+# yarn
+yarn install
 
-```sh
-Portfolio
-├── public
-│   └── vite.svg
-├── src
-│   ├── App.jsx
-│   ├── assets
-│   │   └── react.svg
-│   ├── components
-│   │   ├── ui
-│   │   │   └── button.jsx
-│   ├── lib
-│   │   └── utils.js
-│   ├── index.css
-│   ├── main.jsx
-├── .gitignore
-├── components.json
-├── eslint.config.js
-├── index.html
-├── jsconfig.json
-├── package.json
-├── README.md
-├── vite.config.js
-├── yarn.lock
+# bun
+bun install
 ```
 
-## 🌟 Features
+## Development Server
 
-- **Fast & Optimized**: Built with Vite for blazing-fast performance.
-- **Modern UI**: Styled using Tailwind CSS and Shadcn UI components.
-- **Reusable Components**: A structured component-based approach.
-- **Animations**: Smooth page transitions and animations with Framer Motion.
+Start the development server on `http://localhost:3000`:
 
-## 📦 Installation & Setup
+```bash
+# npm
+npm run dev
 
-1. Clone the repository:
+# pnpm
+pnpm dev
 
-   ```sh
-   git clone https://github.com/itsarman001/portfolio.git
-   cd portfolio
-   ```
+# yarn
+yarn dev
 
-2. Install dependencies:
+# bun
+bun run dev
+```
 
-   ```sh
-   yarn
-   ```
+## Production
 
-3. Start the development server:
+Build the application for production:
 
-   ```sh
-   yarn dev
-   ```
+```bash
+# npm
+npm run build
 
-4. Open [http://localhost:5173](http://localhost:5173) (default Vite port) in your browser.
+# pnpm
+pnpm build
 
----
+# yarn
+yarn build
 
-Feel free to contribute or suggest improvements! 🚀
+# bun
+bun run build
+```
 
----
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
