@@ -1,9 +1,7 @@
 <template>
-  <header
-    class="w-full py-4 px-6"
-  >
+  <header class="w-full py-4 px-6">
     <nav class="flex align-center justify-between gap-2 w-full">
-      <AppLogo :name="user.name" :avatar="user.avatar" />
+      <headerLogo :name="user.name" :avatar="user.avatar" />
     </nav>
   </header>
 </template>
